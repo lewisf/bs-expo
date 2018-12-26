@@ -552,9 +552,15 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@elliottcable/bs-cmdliner@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@elliottcable/bs-cmdliner/-/bs-cmdliner-1.0.2.tgz#825b3351d3beee7def38f7603b81e2a8bb73e939"
+  dependencies:
+    bs-platform "^4.0.1"
+
 "@expo/vector-icons@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-8.0.0.tgz#29c91778aee02b92b045914bbed8eec299a84e5e"
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-8.1.0.tgz#2a70d8d4a8b74f275063bcb2087e8b276a579955"
   dependencies:
     lodash "^4.17.4"
     react-native-vector-icons "6.0.0"
@@ -1289,13 +1295,19 @@ braces@^2.3.1:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-bs-platform@^4.0.14:
+bs-platform@^4.0.1, bs-platform@^4.0.14:
   version "4.0.14"
   resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-4.0.14.tgz#1d9e9622d59ebf4d39408d07b41997201c5f9750"
 
 bs-react-native@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/bs-react-native/-/bs-react-native-0.10.0.tgz#4a9167cbe4c858008a9e56a0f745ba723c74101c"
+
+bsdoc@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/bsdoc/-/bsdoc-0.1.4.tgz#3da672d9d4c5be33512e1d14c27225e17180e805"
+  dependencies:
+    "@elliottcable/bs-cmdliner" "^1.0.2"
 
 bser@^2.0.0:
   version "2.0.0"
