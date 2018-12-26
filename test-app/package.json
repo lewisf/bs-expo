@@ -7,13 +7,12 @@
     "clean-build": "bsb -clean-world -make-world"
   },
   "dependencies": {
-    "expo": "^25.0.0",
+    "expo": "^31.0.0",
     "react": "16.2.0",
-    "react-native":
-      "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
     "bs-expo": "file:..",
-    "bs-platform": "^2.2.2",
-    "bs-react-native": "^0.5.0",
-    "reason-react": "^0.3.4"
+    "bs-platform": "^4.0.14",
+    "bs-react-native": "^0.10.0",
+    "reason-react": "^0.5.3"
   }
 }

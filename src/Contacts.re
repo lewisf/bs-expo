@@ -21,13 +21,13 @@ type contacts_pagination_result = {
     "imageAvailable": string,
     "previousLastName": Js.Undefined.t(string),
   },
-  "hasNextPage": Js.boolean,
-  "hasPreviousPage": Js.boolean,
+  "hasNextPage": bool,
+  "hasPreviousPage": bool,
   "total": int,
 };
 
 [@bs.module "expo"] [@bs.scope "Contacts"] [@bs.val]
-external getContactsAsync :
+external getContactsAsync:
   contacts_params => Js.Promise.t(contacts_pagination_result) =
   "getContactsAsync";
 
@@ -38,6 +38,6 @@ type contacts_by_id_param = {
 };
 
 [@bs.module "expo"] [@bs.scope "Contacts"] [@bs.val]
-external getContactByIdAsync :
+external getContactByIdAsync:
   contacts_by_id_param => Js.Promise.t(contacts_pagination_result) =
   "getContactByIdAsync";

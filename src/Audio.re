@@ -1,39 +1,36 @@
 [@bs.module "expo"] [@bs.scope "Audio"] [@bs.val]
-external interruptionModeIOSMixWithOthers : int =
+external interruptionModeIOSMixWithOthers: int =
   "INTERRUPTION_MODE_IOS_MIX_WITH_OTHERS";
 
 [@bs.module "expo"] [@bs.scope "Audio"] [@bs.val]
-external interruptionModeIOSDoNotMix : int =
-  "INTERRUPTION_MODE_IOS_DO_NOT_MIX";
+external interruptionModeIOSDoNotMix: int = "INTERRUPTION_MODE_IOS_DO_NOT_MIX";
 
 [@bs.module "expo"] [@bs.scope "Audio"] [@bs.val]
-external interruptionModeIOSDuckOthers : int =
+external interruptionModeIOSDuckOthers: int =
   "INTERRUPTION_MODE_IOS_DUCK_OTHERS";
 
 [@bs.module "expo"] [@bs.scope "Audio"] [@bs.val]
-external interruptionModeAndroidDoNotMix : int =
+external interruptionModeAndroidDoNotMix: int =
   "INTERRUPTION_MODE_ANDROID_DO_NOT_MIX";
 
 [@bs.module "expo"] [@bs.scope "Audio"] [@bs.val]
-external interruptionModeAndroidDuckOthers : int =
+external interruptionModeAndroidDuckOthers: int =
   "INTERRUPTION_MODE_ANDROID_DUCK_OTHERS";
 
 [@bs.module "expo"] [@bs.scope "Audio"] [@bs.val]
-external setIsEnabledAsync : Js.boolean => Js.Promise.t(unit) =
-  "setIsEnabledAsync";
+external setIsEnabledAsync: bool => Js.Promise.t(unit) = "setIsEnabledAsync";
 
 type audioMode = {
   .
-  playsInSilentModeIOS: Js.boolean,
-  allowsRecordingIOS: Js.boolean,
+  playsInSilentModeIOS: bool,
+  allowsRecordingIOS: bool,
   interruptionModeIOS: int,
-  shouldDuckAndroid: Js.boolean,
+  shouldDuckAndroid: bool,
   interruptionModeAndroid: int,
 };
 
 [@bs.module "expo"] [@bs.scope "Audio"] [@bs.val]
-external setAudioModeAsync : Js.boolean => Js.Promise.t(unit) =
-  "setAudioModeAsync";
+external setAudioModeAsync: bool => Js.Promise.t(unit) = "setAudioModeAsync";
 /*
  type sound = {
    .

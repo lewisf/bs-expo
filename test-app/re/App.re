@@ -65,8 +65,8 @@ let make = _children => {
   render: _self =>
     <View
       style=Style.(
-              style([flex(1.), justifyContent(Center), alignItems(Center)])
-            )>
+        style([flex(1.), justifyContent(Center), alignItems(Center)])
+      )>
       <Text value="Reason is awesome!" />
     </View>,
 };
